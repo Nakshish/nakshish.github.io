@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  font-weight: 300;
 } 
 nav{
   display: flex;
@@ -44,6 +45,30 @@ nav .menu-btn i{
   font-size: 22px;
   cursor: pointer;
   display: none;
+}
+#introduction {
+    display: flex;
+    border-bottom: solid;
+    border-width: 5px;
+    padding-top: 80px;
+}
+#introduction-text {
+    padding-left: 70px;
+    padding-top: 100px;
+    padding-right: 30px;
+}
+#introduction-txt-para {
+    padding-top: 10px;
+    font-size: 20px;
+}
+#team {
+    height: 1000px;
+    background-color: grey;
+}
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 input[type="checkbox"]{
   display: none;

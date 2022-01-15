@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kraken Education</title>
+    <title>Home | Kraken Education</title>
     <script src="js/app.js"></script>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <link rel="stylesheet" href="css/styles.css">
@@ -12,12 +12,35 @@
 </head>
 <body>
     <header>
-        <div id="nav-placeholder"></div>
-        <script>
-            $(function(){
-                $("#nav-placeholder").load("components/navbar.html");
-            });
-        </script>
+        <nav class="sticky">
+            <div class="logo">
+               <a href="#home"></a><img src="images/logo.png" alt="logo" width="150"></a>
+            </div>
+            <input type="checkbox" id="click">
+            <label for="click" class="menu-btn">
+            <i class="fas fa-bars"></i>
+            </label>
+            <ul>
+               <li><a class="active" href="#home">Home</a></li>
+               <li><a href="#team">Team</a></li>
+               <li><a href="#videos">Videos</a></li>
+               <li><a href="#pricing">Pricing</a></li>
+               <li><a href="#contact">Contact Us</a></li>
+            </ul>
+         </nav>
     </header>
+    <div id="introduction">
+        <img src="images/homeOne.png" alt="KrakenSoftware">
+        <div id="introduction-text">
+            <h2 style="font-size:50px; font-weight: 500;">Kraken Education</h2>
+            <h4 id="introduction-txt-para">Kraken is a software built to make 
+                handling grades and tests easier for teachers. It includes various 
+                features to boost productivity and organisation. Kraken also helps 
+                by generating helpful graphs, charts and statistics to help you 
+                understand your class better.
+            </h4>
+        </div>
+    </div>
+    <div id="team"></div>
 </body>
 </html>
